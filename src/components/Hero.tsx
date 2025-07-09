@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
   const [currentWord, setCurrentWord] = useState(0);
   const [isTyping, setIsTyping] = useState(true);
   
-  const words = [' Networks', ' Cloud Computing', ' Innovation', ' Future'];
+  const words = [' Networks', ' Cloud', ' Innovation', ' Future'];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -97,7 +97,7 @@ const Hero: React.FC = () => {
                 </span>
               </a>
               <a
-                href="mailto:your-email@example.com"
+                href="mailto:albertlie8338@gmail.com"
                 className="group px-8 py-4 border-2 border-blue-600 text-blue-600 dark:text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300"
               >
                 <span className="flex items-center justify-center space-x-2">

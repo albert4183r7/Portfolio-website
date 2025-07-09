@@ -40,7 +40,7 @@ const Projects: React.FC = () => {
       technologies: ['Python', 'Pytorch', 'SUMO'],
       categories: ['ml'],
       image: 'https://images.pexels.com/photos/681335/pexels-photo-681335.jpeg?auto=compress&cs=tinysrgb&w=800',
-      githubUrl: 'https://github.com/albert4183r7/SAC-VANET/tree/dev%231',
+      githubUrl: 'https://github.com/albert4183r7/TA-dashboard',
       icon: <Radio className="w-6 h-6" />,
       features: [
         'Reinforcement learning algorithm for dynamic parameter optimization',

@@ -19,7 +19,7 @@ const Journey: React.FC = () => {
   const journeyItems: JourneyItem[] = [
     {
       id: 1,
-      year: '2021',
+      year: '2021-2022',
       title: 'Admitted via SNBP to ITB',
       description: 'Began my journey at ITB, starting with the Preparatory Program (TPB) at STEI (School of Electrical Engineering and Informatics), where I gained my first hands-on programming experience.',
       icon: <BookOpen className="w-6 h-6" />,
@@ -49,7 +49,7 @@ const Journey: React.FC = () => {
       id: 3,
       year: '2023',
       title: 'First Apprentice at Harisenin.com',
-      description: 'Gained first professional experience as a product tester, learning about UI/UX and testing methodologies.',
+      description: 'Gained first professional experience as a product tester, learning about UI/UX and compatibility testing methodologies.',
       icon: <Briefcase className="w-6 h-6" />,
       category: 'experience',
       details: [
@@ -63,7 +63,7 @@ const Journey: React.FC = () => {
       id: 4,
       year: '2023',
       title: 'UNESCO Youth Research Leadership Experience',
-      description: 'Working with 5-person research team studying academic performance of visually impaired children in Indonesian educational system.',
+      description: 'Working with 5-person research team studying academic performance of visually impaired children in Indonesian educational system, where I gain first leadership experience.',
       icon: <Users className="w-6 h-6" />,
       category: 'achievement',
       details: [
@@ -157,14 +157,14 @@ const Journey: React.FC = () => {
     {
       id: 11,
       year: '2025',
-      title: 'Official Graduation (July-Expected)',
+      title: 'Graduation (July-Expected)',
       description: 'Completing Bachelor of Engineering in Telecommunication Engineering with strong academic record.',
       icon: <Award className="w-6 h-6" />,
       category: 'education',
       details: [
         'B.Eng. in Telecommunication Engineering completion',
         'Current GPA: 3.66/4.00',
-        'Strong foundation in telecommunications and ICT',
+        'Solid foundation in ICT and telecommunications',
         'Ready for professional career in industry'
       ]
     }
