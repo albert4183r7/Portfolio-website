@@ -2,15 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { 
   Code, 
   Network, 
-  Cpu,  
-  Zap, 
   Database,
   Settings,
   Cloud,
   ExternalLink,
-  WashingMachine,
   Computer,
-  Signal
 } from 'lucide-react';
 
 interface Skill {
@@ -33,7 +29,7 @@ interface Certification {
 }
 
 const Skills: React.FC = () => {
-  const [visibleSkills, setVisibleSkills] = useState<number[]>([]);
+  const [visibleSkills, setVisibleSkills] = useState<string[]>([]);
   const [activeCategory, setActiveCategory] = useState<number>(0);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -173,7 +169,7 @@ const Skills: React.FC = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const skillIndex = parseInt(entry.target.getAttribute('data-skill') || '0');
+            const skillIndex = `${activeCategory}-${entry.target.getAttribute('data-skill')}`;
             setVisibleSkills((prev) => [...prev, skillIndex]);
           }
         });
@@ -185,7 +181,7 @@ const Skills: React.FC = () => {
     skills?.forEach((skill) => observer.observe(skill));
 
     return () => observer.disconnect();
-  }, []);
+  }, [activeCategory]);
 
   const getColorClasses = (color: string) => {
     const colors = {
@@ -234,7 +230,7 @@ const Skills: React.FC = () => {
               key={index}
               data-skill={index}
               className={`skill-item bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${
-                visibleSkills.includes(index)
+                visibleSkills.includes(`${activeCategory}-${index}`)
                   ? 'opacity-100 translate-y-0'
                   : 'opacity-0 translate-y-8'
               }`}
