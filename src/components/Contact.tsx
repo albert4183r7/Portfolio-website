@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Location',
       content: 'Bandung, Indonesia',
-      link: 'https://maps.google.com'
+      link: 'https://maps.app.goo.gl/HHBosMJY6gTLQjHV8'
     }
   ];
 
@@ -195,7 +195,7 @@ const Contact: React.FC = () => {
               {/* Download CV */}
               <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-600">
                 <a 
-                  href="https://drive.google.com/file/d/1iWdKCG_iB4XBw9_qlDvfjpd2fC8G5t7n/view?usp=sharing" // Replace with your CV's URL (e.g., Google Drive, Dropbox, or local path)
+                  href="https://drive.google.com/file/d/1yA2ZTPVivuOd_Nqoh8b-aJtj9PZPowvL/view?usp=sharing" // Replace with your CV's URL (e.g., Google Drive, Dropbox, or local path)
                   download="Albert_CV.pdf"
                   className="w-full bg-gradient-to-r from-blue-500 to-teal-500 text-white py-3 px-6 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center space-x-2"
                 >

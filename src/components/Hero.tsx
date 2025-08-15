@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
   const [currentWord, setCurrentWord] = useState(0);
   const [isTyping, setIsTyping] = useState(true);
   
-  const words = [' Networks', ' Cloud', ' Innovation', ' Future'];
+  const words = [' World.', ' Innovation.', ' Future.'];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -64,7 +64,12 @@ const Hero: React.FC = () => {
               </h1>
               <div className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto lg:mx-0 space-y-6">
                 <div>
-                  As a final-year Telecommunication Engineering student, I am deeply  passionate about ICT and building innovative technology infrastructure. Driven to shape tomorrow’s digital transformation, I’m actively seeking opportunities to grow my skills and contribute to impactful projects.
+                  I am a fresh graduate in <strong>Telecommunication Engineering </strong>
+                   with a strong passion for <strong>Information and Communication Technology (ICT) </strong>,
+                    <strong>telecommunications</strong>, and <strong>software development</strong>. 
+                    Driven to shape tomorrow’s digital transformation, I am actively seeking opportunities
+                     to apply my skills and contribute to impactful projects that merge connectivity,
+                      scalability, and innovation.
                 </div>
                 <div>
                   Want to know more? Explore my work or reach out directly. Let’s connect and build the future together!
@@ -80,14 +85,14 @@ const Hero: React.FC = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <GraduationCap className="w-4 h-4" />
-                <span>Bandung Insitute of Technology</span>
+                <span>Institut Teknologi Bandung</span>
               </div>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a 
-                href="https://drive.google.com/file/d/1iWdKCG_iB4XBw9_qlDvfjpd2fC8G5t7n/view?usp=sharing"
+                href="https://drive.google.com/file/d/1yA2ZTPVivuOd_Nqoh8b-aJtj9PZPowvL/view?usp=sharing"
                 download="Albert_CV.pdf"
                 className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-teal-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
               >
@@ -110,7 +115,7 @@ const Hero: React.FC = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200 dark:border-gray-700">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">3.66</div>
+                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">3.67</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">GPA / 4.00</div>
               </div>
               <div className="text-center">

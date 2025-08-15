@@ -11,8 +11,8 @@ const LoadingScreen: React.FC = () => {
             <Cloud className="w-8 h-8 text-white animate-pulse" />
           </div>
         </div>
-        <h2 className="text-2xl font-bold text-white mb-2">Loading Portfolio</h2>
-        <p className="text-white/80">Initializing ICT technology expertise...</p>
+        <h2 className="text-2xl font-bold text-white mb-2">Loading ...</h2>
+        <p className="text-white/80">Good things take time. Hang tight!</p>
         <div className="flex justify-center mt-4 space-x-2">
           <Waves className="w-4 h-4 text-white animate-bounce" style={{ animationDelay: '0ms' }} />
           <Radio className="w-4 h-4 text-white animate-bounce" style={{ animationDelay: '150ms' }} />

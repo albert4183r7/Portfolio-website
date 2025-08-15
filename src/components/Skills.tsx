@@ -7,7 +7,10 @@ import {
   Database,
   Settings,
   Cloud,
-  ExternalLink
+  ExternalLink,
+  WashingMachine,
+  Computer,
+  Signal
 } from 'lucide-react';
 
 interface Skill {
@@ -36,109 +39,90 @@ const Skills: React.FC = () => {
 
   const skillCategories: SkillCategory[] = [
     {
-      title: 'Programming & Development',
+      title: 'Web Development',
       color: 'blue',
       skills: [
         {
           name: 'Python',
           icon: <Code className="w-5 h-5" />,
-          description: 'Backend development (Flask), machine learning, and automation'
+          description: 
+          'Flask for backend development, FastAPI for APIs'
         },
         {
-          name: 'JavaScript (Node.js, React)',
+          name: 'JavaScript',
           icon: <Settings className="w-5 h-5" />,
-          description: 'Full-stack web development and frontend frameworks'
-        },
-        {
-          name: 'C/C++',
-          icon: <Code className="w-5 h-5" />,
-          description: 'System programming and embedded development'
-        },
-        {
-          name: 'Go',
-          icon: <Code className="w-5 h-5" />,
-          description: 'Backend services and cloud-native applications'
+          description: 'React.js for frontend development, Node.js for backend development, Express.js for RESTful APIs'
         },
         {
           name: 'HTML/CSS',
           icon: <Code className="w-5 h-5" />,
-          description: 'Frontend development and responsive design'
+          description: 'Frontend development with responsive design, Tailwind CSS for styling'
         }
       ]
     },
     {
-      title: 'Cloud Computing',
+      title: 'Database',
       color: 'green',
       skills: [
         {
-          name: 'Google Cloud Platform',
-          icon: <Cloud className="w-5 h-5" />,
-          description: 'Compute Engine, Firestore, App Engine, Cloud Run, GKE, BigQuery'
+          name: 'MySQL',
+          icon: <Database className="w-5 h-5" />,
+          description: 'Database management, SQL queries, data modeling'
         },
         {
-          name: 'AWS Cloud Services',
-          icon: <Cloud className="w-5 h-5" />,
-          description: 'EC2, RDS, S3, Route 53, IAM, Lambda'
+          name: 'PostgreSQL',
+          icon: <Database className="w-5 h-5" />,
+          description: 'Advanced database management, complex queries, data integrity'
         },
         {
-          name: 'Alibaba Cloud',
+          name: 'MongoDB',
           icon: <Cloud className="w-5 h-5" />,
-          description: 'MaxCompute, DataWorks, E-MapReduce, ECS'
-        },
-        {
-          name: 'Huawei Cloud',
-          icon: <Cloud className="w-5 h-5" />,
-          description: 'Huawei Cloud service products and deployment'
+          description: 'NoSQL database management, document-oriented storage, data retrieval'
         }
       ]
     },
     {
-      title: 'Networking & Infrastructure',
+      title: 'Network & Cloud',
       color: 'purple',
       skills: [
         {
           name: 'Cisco Technologies',
           icon: <Network className="w-5 h-5" />,
-          description: 'CCNA course completion - Routing, Switching, Wireless, OSPF'
+          description: 'CCNA course completion - Routing, Switching, Wireless, OSPF (Cisco Packet Tracer)'
         },
         {
           name: 'Huawei Technologies',
-          icon: <Settings className="w-5 h-5" />,
-          description: 'HCIA Cloud Service certified, network infrastructure'
+          icon: <Cloud className="w-5 h-5" />,
+          description: 'HCIA Cloud Service certified, Huawei routing & switching (eNSP)'
         },
         {
-          name: 'Linux System Administration',
-          icon: <Zap className="w-5 h-5" />,
-          description: 'Server management, system configuration, virtualization'
+          name: 'Google Cloud Platform',
+          icon: <Cloud className="w-5 h-5" />,
+          description: 'Google Associate Cloud Engineer certified, cloud infrastructure management, deployment, and monitoring'
         },
+        {
+          name: 'AWS',
+          icon: <Cloud className="w-5 h-5" />,
+          description: 'Amazon Web Services fundamentals, cloud computing concepts, deployment, and management'
+        }
       ]
     },
     {
-      title: 'Hardware & Systems',
+      title: 'AI & Data',
       color: 'orange',
       skills: [
         {
-          name: 'IoT Development',
-          icon: <Cpu className="w-5 h-5" />,
-          description: 'LoRa, Arduino, ESP8266, Raspberry Pi'
-        },
-        {
-          name: 'Database Management',
-          icon: <Database className="w-5 h-5" />,
-          description: 'MySQL'
-        },
-        {
           name: 'Machine Learning',
-          icon: <Settings className="w-5 h-5" />,
-          description: 'NLP (LSTM & BERT models), TensorFlow, scikit-learn, computer vision'
+          icon: <Computer className="w-5 h-5" />,
+          description: 'NLP (LSTM & BERT models), TensorFlow, Deep Reinforcement Learning (PyTorch), scikit-learn, computer vision (OpenCV, YOLO)'
         },
         {
-          name: 'ROS & Computer Vision',
-          icon: <Cpu className="w-5 h-5" />,
-          description: 'Robot Operating System, OpenCV'
-        }
+          name: 'Data Analysis',
+          icon: <Database className="w-5 h-5" />,
+          description: 'Data preprocessing, feature engineering, data visualization (Matplotlib, Seaborn), statistical analysis'
+        },
       ]
-    }
+    },
   ];
 
   const certifications: Certification[] = [
@@ -176,6 +160,11 @@ const Skills: React.FC = () => {
       name: 'CCNA Course Completion',
       issuer: 'Cisco',
       year: '2023'
+    },
+    {
+      name: 'AWS Academy Graduate - AWS Academy Cloud Foundations',
+      issuer: 'Amazon Web Services',
+      year: '2024'
     }
   ];
 
@@ -270,7 +259,7 @@ const Skills: React.FC = () => {
         {/* Certifications */}
         <div className="mt-16 bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-            Professional Certifications
+            Certifications & Badges
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {certifications.map((cert, index) => (

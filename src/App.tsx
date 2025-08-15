@@ -5,7 +5,6 @@ import Journey from './components/Journey';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import OrganizationalExperience from './components/OrganizationalExperience';
-import PersonalBrand from './components/PersonalBrand';
 import Contact from './components/Contact';
 import LoadingScreen from './components/LoadingScreen';
 import { ThemeProvider } from './contexts/ThemeContext';
@@ -36,7 +35,6 @@ function App() {
           <Skills />
           <Projects />
           <OrganizationalExperience />
-          <PersonalBrand />
           <Contact />
         </main>
       </div>

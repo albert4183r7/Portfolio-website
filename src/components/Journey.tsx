@@ -117,12 +117,12 @@ const Journey: React.FC = () => {
       id: 8,
       year: '2024',
       title: 'ZTE Indonesia Internship',
-      description: 'Gained hands-on industry experience as Service Delivery Engineer Intern, working on Building Management System (BMS).',
+      description: 'Gained hands-on industry experience as Service Delivery Engineer Intern, working on Building Management System (BMS) for 3 months.',
       icon: <Briefcase className="w-6 h-6" />,
       category: 'experience',
       details: [
         'Service Delivery Engineer Intern position',
-        'Troubleshooting and commissioning Building Management Systems',
+        'Troubleshooting and commissioning Building Management Systems of Tier 3 Data Center',
         'Network switch configuration for BMS and security systems',
         'Cross-division collaboration and problem-solving'
       ]
@@ -131,13 +131,14 @@ const Journey: React.FC = () => {
       id: 9,
       year: '2024',
       title: 'Bangkit Academy & Capstone Project',
-      description: 'Completed Dicoding and Google-sponsored cloud computing program and build innovative machine learning capstone project.',
+      description: 'Completed Dicoding and Google-sponsored cloud computing program and build innovative machine learning, Cloud Computing, and Mobile Development capstone project.',
       icon: <Lightbulb className="w-6 h-6" />,
       category: 'achievement',
       details: [
         'Cloud Computing Learning Track at Bangkit Academy',
         'Work with 7-person capstone project team',
         'Deployed ML models and backend APIs on Google Cloud Platform',
+        'Flask API, IAAS (Compute Engine), and Cloud Firestore Integration.'
       ]
     },
     {
@@ -157,14 +158,14 @@ const Journey: React.FC = () => {
     {
       id: 11,
       year: '2025',
-      title: 'Graduation (July-Expected)',
-      description: 'Completing Bachelor of Engineering in Telecommunication Engineering with strong academic record.',
+      title: 'Graduated from ITB',
+      description: 'Completing S.T. in Telecommunication Engineering with strong academic record.',
       icon: <Award className="w-6 h-6" />,
       category: 'education',
       details: [
-        'B.Eng. in Telecommunication Engineering completion',
-        'Current GPA: 3.66/4.00',
-        'Solid foundation in ICT and telecommunications',
+        'S.T. in Telecommunication Engineering completion',
+        'GPA: 3.67/4.00',
+        'Solid foundation in IT and telecommunications',
         'Ready for professional career in industry'
       ]
     }

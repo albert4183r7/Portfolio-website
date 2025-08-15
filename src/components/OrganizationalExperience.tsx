@@ -28,7 +28,7 @@ const OrganizationalExperience: React.FC = () => {
     {
       id: 1,
       title: 'Head of Programming Division',
-      organization: 'ITB Robotics Humanoid Team',
+      organization: 'ITB Robotics KRSBI-H Humanoid Team',
       period: 'Aug 2023 – May 2024',
       description: 'Led the programming team in developing advanced locomotion dynamics and computer vision systems for humanoid robots.',
       icon: <Cpu className="w-6 h-6" />,
@@ -39,24 +39,23 @@ const OrganizationalExperience: React.FC = () => {
         'Developed ball detection system using ROS and OpenCV',
         'Managed robot simulation systems using Linux',
       ],
-      skills: ['ROS (Robot Operating System)', 'OpenCV', 'Python', 'Ubuntu (Linux)', 'Computer Vision', 'Team Leadership']
+      skills: ['ROS (Robot Operating System)', 'OpenCV', 'Python', 'C++', 'Ubuntu (Linux)', 'Computer Vision', 'Team Leadership']
     },
     {
       id: 2,
       title: 'Head of Research and Appreciation Works Division',
       organization: 'IMT "Signum" ITB (Telecom Engineering Student Association)',
       period: 'Jul 2023 – Feb 2024',
-      description: 'Led a team of 8 members in managing division activities, organizing workshops, and enhancing academic community engagement.',
+      description: 'Led a division of 8 members focused on encouraging innovation through in-depth discussions and the development of relevant works in the field of telecommunications.',
       icon: <Users className="w-6 h-6" />,
       categories: ['leadership'],
       achievements: [
         'Successfully managed team of 8 members across various activities',
         'Organized comprehensive four-day technical workshop covering Proxmox virtualization, LoRa wireless technology, and Cisco OSPF networking.',
-        'Enhanced participants\' academic and technical skills',
-        'Facilitated research discussions and knowledge sharing',
-        'Improved student association engagement and participation'
+        'Initiated and managed key programs: telecom study sessions, competition and info sharing, technical workshops, article writing for Propagasi magazine, and member project curation.',
+        'Achieved 88% of the division’s vision and mission targets through consistent member engagement.'
       ],
-      skills: ['Team Management', 'Workshop Organization', 'Technical Training', 'Research Coordination', 'Academic Leadership']
+      skills: ['Leadership', 'Team Management', 'Workshop Organization', 'Communication', 'Project Management', 'Telecommunications']
     },
     {
       id: 3,
@@ -72,7 +71,7 @@ const OrganizationalExperience: React.FC = () => {
         'Seamlessly integrated logos from 50+ sponsors/partners, ensuring brand accuracy and visual consistency',
         'Delivered a user-centric information hub supporting student orientation activities'
       ],
-      skills: ['Typescript', 'Tailwind CSS', 'Figma', 'Teamwork']
+      skills: ['Typescript (React)', 'Tailwind CSS', 'Figma', 'Team Collaboration', 'Web Development']
     },
   ];
 
