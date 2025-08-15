@@ -104,7 +104,7 @@ const Skills: React.FC = () => {
           name: 'AWS',
           icon: <Cloud className="w-5 h-5" />,
           description: 'Amazon Web Services fundamentals, cloud computing concepts, deployment, and management'
-        }
+        },
       ]
     },
     {
