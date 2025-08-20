@@ -6,9 +6,11 @@ import {
   Shield,
   Cloud,
   SignalHigh,
-  Egg
+  Egg,
+  PersonStanding
 } from 'lucide-react';
 import sinyalkuImage from '../assets/sinyalku-bg.png'; 
+import webImage from '../assets/webpage.png';
 
 interface Project {
   id: number;
@@ -31,9 +33,9 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'Final Thesis: Soft-Actor-Critic (SAC) Based Beacon Rate and Transmission Power in Vehicle-to-Vehicle (V2V) Communication',
-      description: 'RL-based beacon rate and transmission power optimization for VANETs, maximizing V2V efficiency via Channel Busy Ratio (CBR) and Signal-to-Interference-Noise Ratio (SINR) metrics.',
-      technologies: ['Python', 'Pytorch', 'SUMO'],
+      title: 'Vehicle-to-Vehicle (V2V) Communication Optimization using Reinforcement Learning',
+      description: 'Optimizing beacon rate and transmission power for VANETs using reinforcement learning - soft actor-critic (SAC) algorithm.',
+      technologies: ['Python', 'Pytorch', 'SUMO', 'SAC Algorithm', 'Reinforcement Learning'],
       categories: ['ml'],
       image: 'https://images.pexels.com/photos/681335/pexels-photo-681335.jpeg?auto=compress&cs=tinysrgb&w=800',
       githubUrl: 'https://github.com/albert4183r7/v2v-rl-optimization-dashboard',
@@ -74,13 +76,24 @@ const Projects: React.FC = () => {
       id: 5,
       title: 'SinyalKu: Network Signal Strength Monitoring and Visualization Platform',
       description: 'A web-based platform that visualizes mobile network signal strength, integrated with a mobile app for seamless data collection and analysis.',
-      technologies: ['React.js', 'leaflet.js', 'React Native (Android)', 'Python (FastAPI)', 'SQLAlchemy', 'PostgreSQL'],
+      technologies: ['Typescript', 'Javascript', 'React.js', 'leaflet.js', 'React Native (Android)', 'Python (FastAPI)', 'SQLAlchemy', 'PostgreSQL', 'Supabase', 'netlify', 'render.com'],
       categories: ['fullstack'],
       image: sinyalkuImage,
       githubUrl: 'https://github.com/orgs/Sinyalku-Project/repositories',
       otherUrl: 'https://sinyalku.netlify.app',
       downloadUrl: '../assets/app-release.apk',
       icon: <SignalHigh className="w-6 h-6" />
+    },
+    {
+      id: 6,
+      title: 'Personal Portfolio Website',
+      description: 'A responsive personal portfolio website showcasing my projects, skills, and experiences.',
+      technologies: ['Typescript', 'Javascript', 'React.js', 'Tailwind CSS', 'Vite'],
+      categories: ['frontend'],
+      image: webImage,
+      githubUrl: 'https://github.com/albert4183r7/Portfolio-website.git',
+      otherUrl: 'https://albertlie-portfolio-website.vercel.app',
+      icon: <PersonStanding className="w-6 h-6" />
     }
   ];
 
@@ -88,7 +101,8 @@ const Projects: React.FC = () => {
     { id: 'all', name: 'All Projects', count: projects.length },
     { id: 'ml', name: 'Machine Learning', count: projects.filter(p => p.categories.includes('ml')).length},
     { id: 'cloud', name: 'Cloud Computing', count: projects.filter(p => p.categories.includes('cloud')).length},
-    { id: 'fullstack', name: 'FullStack', count: projects.filter(p => p.categories.includes('fullstack')).length}
+    { id: 'fullstack', name: 'FullStack', count: projects.filter(p => p.categories.includes('fullstack')).length},
+    { id: 'frontend', name: 'Frontend', count: projects.filter(p => p.categories.includes('frontend')).length}
   ];
 
   useEffect(() => {

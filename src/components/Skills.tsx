@@ -45,7 +45,7 @@ const Skills: React.FC = () => {
           'Flask for backend development, FastAPI for APIs'
         },
         {
-          name: 'JavaScript',
+          name: 'JavaScript/TypeScript',
           icon: <Settings className="w-5 h-5" />,
           description: 'React.js for frontend development, Node.js for backend development, Express.js for RESTful APIs'
         },
