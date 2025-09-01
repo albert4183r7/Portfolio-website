@@ -92,7 +92,7 @@ const Hero: React.FC = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a 
-                href="https://drive.google.com/file/d/1yA2ZTPVivuOd_Nqoh8b-aJtj9PZPowvL/view?usp=sharing"
+                href="https://drive.google.com/file/d/1YQBKMYtRGrgIUe6h45aaOydw8UyB9l1W/view?usp=sharing"
                 download="Albert_CV.pdf"
                 className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-teal-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
               >
